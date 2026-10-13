@@ -1,1 +1,14 @@
-<!--Your HTML code here-->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home | Hemline Clothing Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="wrap"><a class="brand" href="index.html">Hemline</a><nav aria-label="Main">
+<a href="index.html" aria-current="page">Home</a><a href="inventory.html">Inventory</a><a href="analytics.html">Analytics</a><a href="aboutus.html">About us</a></nav></div></header><main><div class="wrap">
+<section class="hero"><h1>Clothes that work as hard as you do.</h1>
+<p>Hemline is a small clothing store with a simple catalog. This site lets staff browse products, manage inventory, and see how sales are trending.</p>
+<a class="btn" href="inventory.html">Manage inventory</a> <a class="btn ghost" href="analytics.html">View sales analytics</a></section>
+<h2>Featured products</h2><div class="grid" id="featured"></div>
+<section class="section cols"><div><h3>Browse the catalog</h3><p>Eight sample products across tops, bottoms, outerwear and accessories.</p></div>
+<div><h3>Manage stock</h3><p>Add, edit, and remove items on the Inventory page.</p></div>
+<div><h3>Spot trends</h3><p>Charts show revenue by month and category.</p></div></section>
+</div></main><footer><div class="wrap">Hemline Clothing Store &middot; ISM 6225 Assignment 1 &middot; Static demo with sample data</div></footer><script src="js/data.js"></script><script>document.getElementById("featured").innerHTML=DEFAULT_PRODUCTS.map(p=>`<article class="item"><div class="swatch" style="background:${p.color}"></div><div class="body"><h3>${p.name}</h3><p>${p.category}</p><p class="price">$${p.price}</p></div></article>`).join("")</script></body></html>

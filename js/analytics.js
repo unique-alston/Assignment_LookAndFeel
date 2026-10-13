@@ -1,0 +1,3 @@
+const o={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}};
+new Chart(document.getElementById("c1"),{type:"line",data:{labels:["May","Jun","Jul","Aug","Sep","Oct"],datasets:[{label:"Revenue ($)",data:[8200,9100,8700,11400,12800,10900],borderColor:"#2c4a7a",backgroundColor:"rgba(44,74,122,.12)",fill:true,tension:.3}]},options:{...o,scales:{y:{beginAtZero:true,title:{display:true,text:"Revenue ($)"}}}}});
+new Chart(document.getElementById("c2"),{type:"bar",data:{labels:["Tops","Bottoms","Outerwear","Accessories"],datasets:[{label:"Units sold",data:[540,380,210,320],backgroundColor:["#9db4d3","#3f5b87","#4d6a5e","#cbb994"]}]},options:{...o,scales:{y:{beginAtZero:true,title:{display:true,text:"Units sold"}}}}});
